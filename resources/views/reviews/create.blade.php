@@ -20,12 +20,12 @@
                     <div class="box">
                       <div class="box__cell w80">
                         <div class="thumbnail thumbnail--photo">
-                          <div class="thumbnail__figure" style="background-image: url({{ $product->image_url }});"></div>
+                          <div class="thumbnail__figure" style="background-image: url('http://image.eiga.k-img.com/images/movie/81541/poster2/200.jpg?1436408098');"></div>
                         </div>
                       </div>
                       <div class="box__cell pl1em">
                         <h3 class="text-middle text-break color-sub">
-                          {{ $product->title }}
+                          タイトル
                         </h3>
                         <p class="text-xsmall">
                         </p>
@@ -36,6 +36,20 @@
                 </li>
               </ul>
             </div>
+            {{ Form::model($review, array('action' => array('ReviewsController@store', $product->id))) }}
+            <div style="margin: 8px 0">
+              {{ Form::label('rate', '評価', ['style' =>  'margin-right:8;']) }}
+              {{ Form::selectRange('rate', 1, 10, ['placeholder' => '評価', 'class' => 'searh__query', 'style' => 'text-align: right;']) }}
+            </div>
+            <div style="margin: 8px 0">
+              {{ Form::textarea('review', '', ['placeholder' => 'レビューを書いてね！', 'style' => 'width: 100%;height: 300px;']) }}
+            </div>
+            <div class="row">
+              <div class="col10 push1">
+                {{ Form::submit('投稿する', ['class' => 'btn btn--block']) }}
+              </div>
+            </div>
+            {!! Form::close() !!}
           </div>
         </article>
       </div>

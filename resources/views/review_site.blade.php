@@ -30,9 +30,8 @@
           </h4>
           <ul class="listview listview--condensed text-small">
             {{-- */$i = 1/* --}}
-            @foreach (array() as $product)
               <li data-cinema-id="346394">
-                <a href="/products/{{ $product->id }}">
+                <a href="">
                   <div class="box">
                     <div class="box__cell w40 align-center">
                       <p class="label bgcolor-gray-lighter align-center">
@@ -41,15 +40,14 @@
                     </div>
                     <div class="box__cell pl1em">
                       <p class="text-xsmall no-space">
-                        {{ $product->title }}
+                        ベトナムの風に吹かれて
                       </p>
-                      <img src="{{ $product->image_url }}" alt="">
+                      <img src="http://image.eiga.k-img.com/images/movie/81541/poster2/200.jpg?1436408098" alt="">
                     </div>
                   </div>
                 </a>
               </li>
               {{-- */$i++/* --}}
-            @endforeach
           </ul>
         </aside>
       </div>

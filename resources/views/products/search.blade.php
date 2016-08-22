@@ -28,27 +28,25 @@
                 </h2>
               </header>
               <ul class="listview js-lazy-load-images">
-                @foreach ($products as $product)
                 <li>
-                  <a class="listview__element--right-icon" href="/products/{{ $product->id }}/reviews/create" title="{{ $product->title }}">
+                  <a class="listview__element--right-icon" href="/products/0/reviews/create" title="ベトナムの風に吹かれて">
                     <div class="position-right p1em">
                       <i class="icon-chevron-right color-sub"></i>
                     </div>
                     <div class="row no-space-bottom">
                       <div class="col2">
                         <div class="thumbnail thumbnail--movies">
-                          <div class="thumbnail__figure" style="background-image: url({{ $product->image_url }});" title="{{ $product->title }}"></div>
+                          <div class="thumbnail__figure" style="background-image: url('http://image.eiga.k-img.com/images/movie/81541/poster2/200.jpg?1436408098');" title="ベトナムの風に吹かれて"></div>
                         </div>
                       </div>
                       <div class="col6 push6">
                         <h3 class="text-middle text-break">
-                          <span class="color-sub">{{ $product->title }}</span>
+                          <span class="color-sub">ベトナムの風に吹かれて</span>
                         </h3>
                       </div>
                     </div>
                   </a>
                 </li>
-               @endforeach
               </ul>
             </div>
           </article>

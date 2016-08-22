@@ -10,11 +10,11 @@
             <div class="container">
               <header class="header header--section">
                 <h2 class="text-middle">
-                  <i class="icon-movie color-gray-light"></i>{{ $product->title }}
+                  <i class="icon-movie color-gray-light"></i>ベトナムの風に吹かれて
                 </h2>
               </header>
               <p style="text-align: center">
-                <img src="{{ $product->image_url }}" alt="{{ $product->title }}">
+                <img src="http://image.eiga.k-img.com/images/movie/81541/poster2/200.jpg?1436408098" alt="ベトナムの風に吹かれて">
               </p>
               <div style="text-align: right">
                 <a href="">この作品を投稿する</a>
