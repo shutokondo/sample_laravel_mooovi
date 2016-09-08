@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Product;
+use App\Review;
 
 class ReviewsController extends RankingController
 {
@@ -19,6 +21,6 @@ class ReviewsController extends RankingController
     public function store()
     {
         // Review::create()
-        // トップページにリダイレクトする
+        return redirect('/products');
     }
 }
