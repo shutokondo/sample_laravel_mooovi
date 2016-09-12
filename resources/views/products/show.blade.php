@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('review_site')
 
 @section('content')
   <div id="main_cnt_wrapper">
