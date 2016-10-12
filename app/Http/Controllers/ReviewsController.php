@@ -15,7 +15,7 @@ class ReviewsController extends RankingController
         $product = Product::find($id);
         $review = new Review();
 
-        return('reviews.create')->with(array('product' => $product, 'review' => $review));
+        return view('reviews.create')->with(array('product' => $product, 'review' => $review));
     }
 
     public function store()
